@@ -1,0 +1,226 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* VARIABLES */
+:root {
+	--main-background: hsl(233, 47%, 7%);
+	--card-background: hsl(244, 38%, 16%);
+	--accent: hsl(277, 64%, 61%);
+	--main-heading: hsl(0, 0%, 100%);
+	--main-paragraph: hsla(0, 0%, 100%, 0.75);
+	--stat-headings: hsla(0, 0%, 100%, 0.6);
+}
+
+/* MAIN STYLE */
+html {
+	font-size: 15px;
+	/* fonts:     font-family: 'Inter', sans-serif;
+
+    font-family: 'Lexend Deca', sans-serif; */
+	background: var(--main-background);
+}
+
+body,
+header {
+	width: 300px;
+}
+
+body,
+p,
+li span {
+	color: var(--main-paragraph);
+}
+
+body {
+	background: var(--card-background);
+	margin: 25px auto;
+	height: 90%;
+	border-radius: 10px;
+	font-family: "Inter", sans-serif;
+}
+
+header {
+	box-shadow: inset 0 0 0 200px hsla(268, 36%, 41%, 0.7);
+	background: url("./images/image-header-mobile.jpg") no-repeat;
+	background-size: cover;
+	height: 200px;
+	border-radius: 10px 10px 0 0;
+}
+
+h1,
+p,
+ul,
+footer {
+	text-align: center;
+	padding: 0.8em 0;
+	margin: 0 auto;
+}
+
+p {
+	width: 70%;
+	line-height: 1.5em;
+}
+
+h1,
+li {
+	color: var(--main-heading);
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 1.75em;
+	width: 80%;
+}
+
+li {
+	padding: 0 0 1.25em;
+	font-size: 1.5em;
+}
+
+p,
+li span {
+	font-weight: 400;
+	font-family: "Lexend Deca", sans-serif;
+	font-size: 0.8rem;
+}
+
+li span {
+	text-transform: uppercase;
+}
+
+h1 span,
+footer a:link,
+footer a:visited {
+	color: var(--accent);
+}
+
+footer {
+	font-size: 0.75rem;
+}
